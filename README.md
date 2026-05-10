@@ -1,3 +1,35 @@
+
+### My Submission
+
+This was my entry for the ICRA 2026 LeHome Challenge, focused on bimanual cloth folding using vision-language-action models in Isaac Lab simulation.
+
+### What I Trained
+
+I trained all three model architectures provided by the challenge:
+
+| Model | Garments | Training Steps |
+|---|---|---|
+| ACT (Action Chunking with Transformers) | top_long, top_short, pant_long, pant_short | ~10k |
+| Diffusion Policy | top_long, top_short, pant_long, pant_short | ~10k |
+| SmolVLA | top_long, top_short, pant_long, pant_short | ~10k |
+
+Training was run locally on a laptop with an NVIDIA GPU.
+
+### Evaluation
+
+I was unable to run the official Isaac Lab evaluation pipeline due to hardware constraints — the full simulation environment exceeded my laptop's capacity. As a result, I don't have quantitative fold scores to report.
+
+The focus of my work was on understanding and implementing the full training pipeline across all three model families, and comparing how ACT, Diffusion Policy, and a VLA-based approach (SmolVLA) are set up for imitation learning on a bimanual manipulation task.
+
+### Key Takeaways
+
+- Got hands-on experience with three distinct imitation learning paradigms: transformer-based chunking (ACT), denoising diffusion for action generation, and vision-language-action model fine-tuning (SmolVLA via LeRobot)
+- Worked across all four garment categories, covering both top and pant variants in long and short configurations
+- Gained practical exposure to Isaac Lab simulation setup and the dual-arm control pipeline
+
+---
+
+
 <p align="center">
   <h1 align="center">
     LeHome Challenge 2026
